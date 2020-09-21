@@ -5,3 +5,5 @@ class Userproduct(models.Model):
     weight=models.IntegerField(blank=True,null=True)
     price=models.IntegerField(blank=True,null=True)
 
+    def __str__(self):
+      return self.product_type

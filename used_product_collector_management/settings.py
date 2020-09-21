@@ -43,7 +43,10 @@ INSTALLED_APPS = [
     'Buyer.apps.BuyerConfig',
 
     'Employee.apps.EmployeeConfig',
-    'Cost.apps.CostConfig'
+    'Cost.apps.CostConfig',
+    'Payment.apps.PaymentConfig',
+    'Pickup.apps.PickupConfig'
+
 ]
 
 MIDDLEWARE = [
