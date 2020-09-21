@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <h1> Customer information</h1>
+    {% for i in userlist %}
+
+        {{ i.user_name }}<br>
+
+        {{ i.email}}<br>
+        {{ i.address }}<br>
+        {{ i.contact}}
+
+
+    {% endfor %}
+
+
+{% endblock content %}

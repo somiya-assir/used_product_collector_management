@@ -16,6 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.urls import path
+from Usermanagement import views as user_views
+from Userproduct import views as product_views
+from Pickup import views as pickup_views
+from Payment import views as pay_views
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('user_list/',user_views.showuser,name='user_list'),
+    path('product_list/',product_views.showproduct,name='product_list'),
+    path('pickup_list/',pickup_views.showpickup,name='pickup_list'),
+    path('payment_list/', pay_views.showpayment, name='pay_list'),
+
 ]

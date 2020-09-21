@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h1> pickup information</h1>
+    {% for i in pickuplist %}
+
+        {{ i.shedule }}<br>
+
+        {{ i.user}}<br>
+        {{ i.employee_name }}<br>
+
+
+    {% endfor %}
+
+
+{% endblock content %}
