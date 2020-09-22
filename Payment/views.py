@@ -3,7 +3,7 @@ from .models import Payment
 
 # Create your views here.
 def showpayment(request):
-    all1 = User.objects.all()
+    all1 = Payment.objects.all()
 
     contex = {
         'paymentlist': all1

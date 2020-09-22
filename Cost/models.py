@@ -3,9 +3,6 @@ from Employee.models import Employee
 from Userproduct.models import Userproduct
 
 # Create your models here.
-
-
-
 class Cost(models.Model):
 
   amount=models.IntegerField()
